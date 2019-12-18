@@ -1,4 +1,4 @@
-#This is a program for using finite elements method to solve 1D helmhotz equation with constan neuman bounadary!
+#This is a program for using finite elements method to solve 1D helmhotz equation with constan neumann bounadary!
 from numpy import *
 from sympy.abc import s
 from sympy import *
@@ -131,8 +131,8 @@ for N in elements_solve:#Do with different numbers of elements
                             #f=(30*(sin(math.sqrt(30)*x_s)))  #take sign when it's on right hand
                             f=0
                             k_sqr=16# take sign when it's on left hand. Of couse!
-                            Neumman=5j #specify you right hand Nuemman boundary here
-                            Modifier=Neumman/3
+                            Neumann=5j #specify you right hand Nuemann boundary here
+                            Modifier=Neumann/3
                             u=(U_0[globalnode(1,e)]*phi_local[1])
                             du=(U_0[globalnode(1,e)]*dphi_local[1])#Just because I know the diff of linear function
                             for j_local in Localnodes[e]:
