@@ -153,9 +153,7 @@ for N in elements_solve:#Do with different numbers of elements
                                                     if E_k_global!=-1:
                                                        jdof=localequ(k_local,e)
                                                        #The coefficient matrix should be given here.
-                                                       J_elements[idof][jdof] = J_elements[idof][jdof]+(((dphi_local[k_local]*dphi_local[j_local]*(Jacob**(-2)))-k_sqr*(phi_local[j_local]*phi_local[k_local]))*Jacob*w_int).subs(s,s_int)
-                                                       #if (e==N) and (j_local==2):
-                                                       	   
+                                                       J_elements[idof][jdof] = J_elements[idof][jdof]+(((dphi_local[k_local]*dphi_local[j_local]*(Jacob**(-2)))-k_sqr*(phi_local[j_local]*phi_local[k_local]))*Jacob*w_int).subs(s,s_int)                                            	   
                             for idof in range(ndof):#J and r assembly
                                 idof=idof+1
                                 E_i_global=E_hat_j_e(idof,e)
