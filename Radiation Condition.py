@@ -13,9 +13,9 @@ line_type=['o:','o--','.-']
 line_colour_r=['#228B22','#4169E1','#FF1493']#Forestgreen+Royalblue+Deeppink!
 line_colour_i=['lime','blue','yellow']
 elements_solve=[3,15,120]#Maybe overfit?
-Domain=[0,2*pi]#Tell the domain to work on, but not functional yet!
+Domain=[0,2]#Tell the domain to work on, but not functional yet!
 Domain_end=Domain[1]
-Coefficient_type='real'#Try the complex coefficient just for fun
+Coefficient_type='real'
 ###########################################################################
 #Build local coordinates
 phi_local=[0,(0.5*(1-s)),(0.5*(1+s))]#Local functions
